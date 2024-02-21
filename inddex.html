@@ -3,39 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>BT Kiểm Tra</title>
     <link rel="stylesheet" href="./index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <title>Document</title>
   </head>
   <body>
-    <h1>Danh sách công việc</h1>
     <div class="container">
-      <div class="child">
-        <input type="text" />
-        <label for="">
-          <button>Thêm</button>
-        </label>
-        <br />
+      <header class="header">
+        <h2>Danh sách công việc</h2>
+      </header>
+
+      <div class="addtask">
+        <form id="form">
+          <input type="text" class="addinfor" />
+          <button type="submit" id="submit">Thêm</button>
+        </form>
+        <div class="error">Dữ liệu đầu vào không được để trống</div>
       </div>
 
-      <input type="checkbox" />
-      <label for="">Quét nhà</label>
-      <hr />
-      <br />
-      <input type="checkbox" />
-      <label for=""><s>Giặt quần áo</s></label>
-      <hr />
-      <br />
-      <input type="checkbox" />
-      <label for="">Học lập trình</label>
-      <hr />
-      <br />
-      <input type="checkbox" />
-      <label for=""><s> Nấu ăn</s> </label>
-      <hr />
-      <br />
+      <div class="process">
+        <h3>Tiến độ hoàn thành <span>50%</span></h3>
+      </div>
     </div>
-    <div>
-      <p>Tiến độ hoàn thành: 50%</p>
-    </div>
+    <script src="./index.js"></script>
   </body>
 </html>
